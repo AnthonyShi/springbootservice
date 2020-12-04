@@ -14,9 +14,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:oracle:thin:@172.16.45.131:1521/dxhorcl
-    username: PHISTEST1
-    password: PHISTEST1
+    url: jdbc:oracle:thin:@xxx.xxx.xxx.xxx:1521/dxhorcl
+    username: aaa
+    password: bbb
     driver-class-name: oracle.jdbc.driver.OracleDriver
     validationQuery: SELECT 1 from dual
     dbType: 2

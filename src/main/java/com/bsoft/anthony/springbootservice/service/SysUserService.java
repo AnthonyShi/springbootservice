@@ -13,14 +13,24 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class SysUserService {
-    @Autowired
-    private SysUserMapper userMapper;
+    // @Autowired
+    // private SysUserMapper userMapper;
 
     public SysUser selectById(Integer id) {
-        return userMapper.selectById(id);
+        SysUser sysUser = new SysUser();
+        sysUser.setId(1);
+        sysUser.setName("zhangsan");
+        sysUser.setPassword("123");
+        return sysUser;
+        // return userMapper.selectById(id);
     }
 
     public SysUser selectByName(String name) {
-        return userMapper.selectByName(name);
+        SysUser sysUser = new SysUser();
+        sysUser.setId(1);
+        sysUser.setName("zhangsan");
+        sysUser.setPassword("123");
+        return sysUser;
+        // return userMapper.selectByName(name);
     }
 }

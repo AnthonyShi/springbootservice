@@ -13,10 +13,14 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class SysRoleService {
-    @Autowired
-    private SysRoleMapper roleMapper;
+    // @Autowired
+    // private SysRoleMapper roleMapper;
 
     public SysRole selectById(Integer id){
-        return roleMapper.selectById(id);
+        SysRole sysRole = new SysRole();
+        sysRole.setId(1);
+        sysRole.setName("ROLE_ADMIN");
+        return sysRole;
+        // return roleMapper.selectById(id);
     }
 }

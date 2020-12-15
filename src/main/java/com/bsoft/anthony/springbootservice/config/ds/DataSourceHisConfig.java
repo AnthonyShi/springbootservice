@@ -25,8 +25,8 @@ public class DataSourceHisConfig {
     // static final String MAPPER_LOCATION_ORACLE = "classpath:mapper/his/oracle/*.xml";
     static final String MAPPER_LOCATION_ORACLE = "classpath:mapper/his/*.xml";
 
-	@Value("${spring.datasource.his.dbType}")
-    private String dbType;
+	// @Value("${spring.datasource.his.dbType}")
+    // private String dbType;
 	
 	@Bean(name = "hisDataSource")
 	@ConfigurationProperties(prefix = "spring.datasource.his")

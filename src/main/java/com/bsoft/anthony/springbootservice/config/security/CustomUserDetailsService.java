@@ -27,6 +27,7 @@ import java.util.List;
  */
 @Service("userDetailsService")
 public class CustomUserDetailsService implements UserDetailsService {
+
     @Autowired
     private SysUserService userService;
 

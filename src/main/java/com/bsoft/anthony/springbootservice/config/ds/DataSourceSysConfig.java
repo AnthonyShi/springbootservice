@@ -16,6 +16,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 import javax.sql.DataSource;
 
+
 @Configuration
 @MapperScan(basePackages = "com.bsoft.anthony.springbootservice.dao.sys", sqlSessionFactoryRef = "sysSqlSessionFactory")
 public class DataSourceSysConfig {
@@ -25,8 +26,8 @@ public class DataSourceSysConfig {
     // static final String MAPPER_LOCATION_ORACLE = "classpath:mapper/his/oracle/*.xml";
     static final String MAPPER_LOCATION_ORACLE = "classpath:mapper/sys/*.xml";
 
-	@Value("${spring.datasource.his.dbType}")
-    private String dbType;
+	// @Value("${spring.datasource.his.dbType}")
+    // private String dbType;
 	
 	@Bean(name = "sysDataSource")
 	@ConfigurationProperties(prefix = "spring.datasource.sys")
